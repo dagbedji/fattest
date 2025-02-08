@@ -1,60 +1,4 @@
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-
-
-html {
-  scroll-behavior: smooth;
-}
-/* General Reset */
-body {
-    margin: 0;
-    padding: 0;
-  }
-
-  body, html {
-    margin: 0;
-    padding: 0;
-  }
-  
-  ul{
-    margin-top: 0;
-  }
-  
-  /* Hover and Focus Effects */
-  
-  /* Sidebar Styling */
-  
-  /* Hamburger Menu Button */
-  
-
-
-
-/* Contact Form Section */
-
-/* Form Styling */
-
-/* Contact Info Styling */
-
-/* For tablets (up to 1024px) */
-/* Contact Section (ressource)*/
-
-/* Footer container */
-
-/* Description section */
-
-/* Social Icons */
-
-/* Newsletter section */
-/* Input container adjustments */
-/* Button adjustments */
-/* Visually hidden class */
-
-/* Responsive adjustments */
-
+/* Service CSS */
 /* Paragraph styling */
 @media (max-width: 768px) {
 
@@ -88,19 +32,11 @@ li {
   }
 }
 
-/* Apply delay to each list item to make them appear one by one */
-
-/* nous choisi */
 
 h2{
   font-family: Recoleta, serif;
   color: #555555;
 }
-
-
-/* For tablets (up to 1024px) */
-/* Contact Section (ressource)*/
-
 
 
 @media (max-width: 576px) {
@@ -625,3 +561,4 @@ section {
       display: block;
     }
   }
+  /* Service CSS */

@@ -1,10 +1,5 @@
-/* Base Styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  body {
+/* Tarification CSS */
+  .tarification{
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #333;
     line-height: 1.6;
@@ -13,7 +8,7 @@
   /* Header Section */
   .tarif {
     position: relative;
-    background: url('./image/tarification/youth2.jpg') center/cover no-repeat;
+    background: url('../image/tarification/youth2.jpg') center/cover no-repeat;
     height: 250px;
     display: flex;
     justify-content: center;
@@ -233,15 +228,7 @@
       padding: 0;
     }
     
-    /* Hover and Focus Effects */
-    
-    /* Sidebar Styling */
-    
-    /* Hamburger Menu Button */
-  
-  /* Optional: Add hover effect on bullets */
-  /* nous choisi */
-  
+
   /* Keyframes for the fadeInUp animation */
   @keyframes fadeInUp {
     to {
@@ -255,21 +242,13 @@
     font-family: Recoleta, serif;
     color: #555555;
   }
-  /* Nous Contacter Section */
-  
-  
-  
-  
+
   
   h2 {
     font-family: "Josefin Sans";
   }
   
-  /* Contact Form Section */
-  
-  /* Form Styling */
-  
-  /* Contact Info Styling */
+
   .info {
     grid-area: info;
     background-color: #f9f9f9;
@@ -287,24 +266,4 @@
     }
    
   }
-  /* Contact Section (ressource)*/
-  
-  /* Footer container */
-  
-  /* Description section */
-  
-  /* Social Icons */
-  
-  /* Newsletter section */
-  /* Input container adjustments */
-  /* Button adjustments */
-  /* Visually hidden class */
-  
-  /* Responsive adjustments */
-  
-  /* Paragraph styling */
-  /* Media query for very small screens (less than 480px wide) */
-  
-  
-  
-  
+ /* Tarification CSS */

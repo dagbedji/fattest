@@ -1,35 +1,4 @@
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
 
-html {
-  scroll-behavior: smooth;
-}
-/* General Reset */
-body {
-    margin: 0;
-    padding: 0;
-  }
-
-  body, html {
-    margin: 0;
-    padding: 0;
-  }
-  
-  ul{
-    margin-top: 0;
-  }
-  
-  /* Hover and Focus Effects */
-  
-  /* Sidebar Styling */
-  
-  /* Hamburger Menu Button */
-  
-
-/* image container pas commun */
 .image-container {
   width: 100%; /* Make sure the container takes full width of its parent */
   height: 420px; /* Set a fixed height */
@@ -321,27 +290,7 @@ h2 {
   align-items: center;
 }
 
-/* Contact Form Section */
 
-/* Form Styling */
-
-/* Contact Info Styling */
-
-/* For tablets (up to 1024px) */
-/* Contact Section (ressource)*/
-
-/* Footer container */
-
-/* Description section */
-
-/* Social Icons */
-
-/* Newsletter section */
-/* Input container adjustments */
-/* Button adjustments */
-/* Visually hidden class */
-
-/* Responsive adjustments */
 
 /* Paragraph styling */
 @media (max-width: 768px) {
