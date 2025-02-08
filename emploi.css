@@ -1,0 +1,619 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+   
+  
+  /* Logo CSS  commun*/
+/* fin logo CSS commun */
+
+/* Navbar CSS - Start(commun) */
+
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Hover and Focus Effects */
+  
+  /* Sidebar Styling */
+  
+  /* Hamburger Menu Button */
+  
+  
+  /* Styles for the navbar */
+
+  /* Navbar CSS - end */
+
+
+
+  /* image container pas commun */
+/* fin image container */
+
+/* image container pas commun */
+
+/* card css */
+/* fin image container */
+
+
+
+
+/* A propos banner CSS  Pas commun*/
+  /* Media Query for Small Screens */
+/* fin A propos banner CSS */
+
+
+/* Apropos */
+
+/* nous choisi */
+
+/* Keyframes for the fadeInUp animation */
+@keyframes fadeInUp {
+  to {
+      opacity: 1; /* End at full opacity */
+      transform: translateY(0); /* End at the original position */
+  }
+}
+
+/* Apply delay to each list item to make them appear one by one */
+
+/* nous choisi */
+/* nous choisi */
+
+/* Carriere */
+/* header */
+/* header */
+
+
+
+
+
+/* Body and Container */
+/* Body with Background Slideshow */
+
+/* Form Input Boxes */
+
+/* Style for File Inputs */
+
+
+/* Style for Submit Button */
+
+/* Responsive Design */
+
+/* Carriere */
+
+
+
+
+/* CSS emploi */
+
+
+
+
+
+
+
+/* price */
+h2{
+  font-family: Recoleta, serif;
+  color: #555555;
+}
+/* emploiication */
+
+/* Responsive form for service request */
+
+/* Media Queries for Responsiveness */
+
+/* Style for the header section */
+
+/* Style for the colored word "service" */
+/* service */
+
+/* CSS emploi */
+
+
+
+/* Contact Section (ressource)*/
+
+/* Nous Contacter Section */
+
+
+
+/* Recommandation Section */
+
+h2 {
+  font-family: "Josefin Sans";
+}
+
+/* Service Section */
+
+/* Hover effect to make the link visually stand out */
+
+
+/* Contact Form Section */
+
+/* Form Styling */
+
+/* Contact Info Styling */
+
+/* Map Section */
+
+/* Media Queries for Responsiveness */
+
+/* For small devices like phones (up to 768px) */
+
+/* For tablets (up to 1024px) */
+/* Contact Section (ressource)*/
+
+
+
+
+/* Style for the images */
+
+
+/* Style for the title and content */
+/* Carriere CSS*/
+
+/* Responsive adjustments */
+
+/* A propos banner CSS  Pas commun*/
+/* Media Query for Small Screens */
+/* Style for highlighted text */
+
+/* Responsive behavior */
+.postuler h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333; /* Optional: change title color */
+  font-family: Commons,sans-serif;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+/* Style for the postuler section */
+.postuler {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Style for the anchor link */
+
+/* Hover effect */
+
+
+/* fin A propos banner CSS */
+
+
+
+
+
+
+
+/* Footer container */
+
+/* Description section */
+
+/* Social Icons */
+
+/* Newsletter section */
+
+/* Input container adjustments */
+
+/* Button adjustments */
+
+/* Visually hidden class */
+
+/* Responsive adjustments */
+
+
+
+/* end footer CSS  */
+
+
+/* General body styling */
+
+/* Container for the form */
+
+/* Text container styling */
+
+/* Header styling */
+
+/* Paragraph styling */
+
+/* Media query for very small screens (less than 480px wide) */
+
+
+
+
+
+/* newservice */
+/* General Styles */
+
+/* Section 1 */
+
+/* Section 2 */
+
+/* Section 3 */
+
+/* Media Queries for Mobile and Tablet */
+
+
+
+
+
+
+/* Media Queries for Mobile and Tablet */
+@media (max-width: 1024px) {
+  /* Section 1: Adjust image and text positioning */
+}
+
+@media (max-width: 768px) {
+  /* Section 1: Adjust image and text positioning */
+}
+
+@media (max-width: 480px) {
+  /* Section 1: Adjust image and text positioning */
+}
+/* Apply styles to specific sections */
+
+.nouscontacter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+}
+
+.textcontact {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+.textcontact img {
+  width: 350px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.text-content {
+  max-width: 600px;
+}
+.styled-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.text-content h2{
+  font-weight: 400;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #111111;
+  text-align: center;
+  max-width: 800px;
+}
+
+.text-content p {
+  margin: 20px 0;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333333;
+}
+
+/* Header Section */
+.emploi {
+  position: relative;
+  background: url('./emploi/1000_F_181206822_Pn134XlCBfH2Ka9299DZLHzGOZX8YHcn.jpg') center/cover no-repeat;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body 
+.emploi_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.emploi_text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+}
+
+.emploi_text h2 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.apply {
+  position: relative;
+  padding: 50px 10%;
+  background-color: #009CA8;
+}
+
+.apply .text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.apply .content {
+  flex: 1;
+  text-align: left;
+}
+
+.apply .content h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.apply .content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.apply .image {
+  flex: 0;
+  text-align: center;
+}
+
+.apply .image img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Arrows Styling */
+.arrows {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.arrows img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .apply {
+    padding: 50px 5%;
+  }
+  
+  .apply .text {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .apply .content {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .apply .image img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .apply {
+    padding: 30px 5%;
+  }
+
+  .apply .text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .apply .content {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .apply .image img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .apply {
+    padding-top: 100px;
+  }
+
+  .apply .image img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.blue-link {
+  color: #FFC100;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+
+
+
+/* Pricing Section */
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .emploi_text h2 {
+    font-size: 1.75rem;
+  }
+}
+
+
+/* Style for the Contactez-nous button */
+
+/* Hover effect for the button */
+
+/* Ensure the <p> inside doesn't add extra margins */
+
+/* Divider styling */
+
+/* Price styling (highlight) */
+
+/* Details styling */
+/* Container for all text items */
+
+
+/* Each individual text item */
+
+/* Ensure the icon has a consistent size */
+
+/* Remove default margins from the paragraph if needed */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul{
+    margin-top: 0;
+  }
+  
+  /* Hover and Focus Effects */
+  
+  /* Sidebar Styling */
+  
+  /* Hamburger Menu Button */
+  
+
+/* image container pas commun */
+
+
+/* Responsive styling for small screens */
+/* Responsive styling for small screens */
+
+/* Optional: Add hover effect on bullets */
+/* nous choisi */
+
+/* Keyframes for the fadeInUp animation */
+@keyframes fadeInUp {
+  to {
+      opacity: 1; /* End at full opacity */
+      transform: translateY(0); /* End at the original position */
+  }
+}
+/* Responsive Design */
+
+h2{
+  font-family: Recoleta, serif;
+  color: #555555;
+}
+/* Nous Contacter Section */
+
+
+
+
+
+h2 {
+  font-family: "Josefin Sans";
+}
+
+/* Contact Form Section */
+
+/* Form Styling */
+
+/* Contact Info Styling */
+
+/* For tablets (up to 1024px) */
+/* Contact Section (ressource)*/
+
+/* Footer container */
+
+/* Description section */
+
+/* Social Icons */
+
+/* Newsletter section */
+/* Input container adjustments */
+/* Button adjustments */
+/* Visually hidden class */
+
+/* Responsive adjustments */
+
+/* Paragraph styling */
+/* Media query for very small screens (less than 480px wide) */
+
+
+

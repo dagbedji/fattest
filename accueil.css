@@ -1,0 +1,363 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul{
+    margin-top: 0;
+  }
+  
+  /* Hover and Focus Effects */
+  
+  /* Sidebar Styling */
+  
+  /* Hamburger Menu Button */
+  
+
+/* image container pas commun */
+.image-container {
+  width: 100%; /* Make sure the container takes full width of its parent */
+  height: 420px; /* Set a fixed height */
+  overflow: hidden; /* Hide any part of the image that overflows */
+  margin-bottom: 1.5rem;
+  position: relative;
+  background: linear-gradient(to right, #009CA8,#009CA8, #009CA8, #50D2D8, #009CA8);
+
+}
+.image-container .image img {
+width: 103%; /* Image takes full width of its container */
+object-fit: cover; /* Ensures the image covers the container without distortion */
+margin-top: 0;
+margin-right: 100%;
+
+}
+.image-container .image{
+  position: absolute;
+  right: 1.3%;
+
+}
+.image-container .text {
+  position: absolute;
+  left: 0;
+  color: white; /* Text color */
+  top: 5%; /* Position text 5% from the top */
+  font-size: 16px; /* Font size */
+  text-align: left; /* Align text content to the left */
+  padding: 10px 15px; /* Add padding for spacing from the edges */
+  max-width: 60%; /* Optional: Restrict the text width for readability */
+  
+}
+
+.image-container .text h2 {
+  text-align: center; /* Centers the text */
+  line-height: 1.5;   /* Adjusts the spacing between lines */
+  color: #fff;
+  font-size: 3em;
+}
+
+.image-container .text .line1 {
+  font-weight: bold; /* Add emphasis to the first line if needed */
+}
+.image-container .text p {
+  text-align:left; /* Centers the text */
+  line-height: 1.4;   /* Adjusts the spacing between lines */
+}
+.button-container {
+  position: absolute;
+  top: 83%; /* Position the button 90% down the container */
+  left: 25%;
+  display: flex; /* Ensure flexbox alignment is applied */
+  justify-content: center; /* Center child elements horizontally */
+  align-items: center; /* Center child elements vertically */
+  z-index: 1;
+  margin-top: 20px;
+}
+
+
+.contact-button {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  background-color: #FFC100;
+ 
+}
+
+.contact-button:hover {
+  background-color: #FFC700;
+  
+}
+
+
+/* Responsive styling for small screens */
+/* Responsive styling for small screens */
+@media (max-width: 576px) {
+  .image-container {
+    position: relative;
+    padding: 15px;
+    height: 900px;
+  }
+  .image-container .image img {
+    width: 111%;
+    max-width: 111%;
+    margin-left: -10%;
+    margin-top: 15%;
+    
+}
+.image-container .text{
+  font-size: 15px;
+  color: #fff;
+  max-width: 900px;
+  width: 100%;
+  margin-top: 80%;
+  height: 10%;
+}
+.image-container .text h2 {
+  font-size: 25px;
+}
+.button-container {
+  position: absolute;
+  top: 93%; /* Adjust button position for small screens */
+  left: 10%; /* Adjust button position for small screens */
+  width: 80%; /* Make the button container wider */
+  margin-top: 10px; /* Reduce margin for small screens */
+}
+
+.contact-button {
+  width: 50%; /* Make the button take full width of its container */
+  padding: 10px; /* Adjust padding for small screens */
+  font-size: 14px; /* Adjust font size for small screens */
+  background-color: #FFC100; /* Change button color for small screens */
+}
+.contact-button:hover {
+  background-color: #FFC700;
+  
+}
+}
+  
+.no-bootstrap *{
+  box-sizing: border-box;
+  padding: 0;
+}
+.no-bootstrap .firstcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 70vh;
+  background: linear-gradient(to bottom, #b3e0e4, #c3e8ec, #d3eff2, #e3f5f7, #f3fcfc);
+}
+
+.no-bootstrap .card-wrapper{
+  max-width: 900px;
+  margin: 0 210px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+.no-bootstrap .card-list .card-item {
+  list-style: none;
+}
+.no-bootstrap .card-list .card-item .card-link{
+  user-select: none;
+  display: block;
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.2s ease;
+}
+.no-bootstrap .card-list .card-item .card-link:active{
+  cursor: grabbing;
+}
+.no-bootstrap .card-list .card-item .card-link:hover{
+  border-color: #2ba1b3;
+
+}
+.no-bootstrap .card-list .card-item .card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9; 
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+.no-bootstrap .card-list .card-link .badge{
+  color: #2ba1b3;
+  margin: 16px 0 18px;
+  font-size: 0.95;
+  font-weight: 500;
+  padding: 8px 16px;
+  background-color: #F3FCFC;
+  width: fit-content;
+  border-radius: 50px;
+
+}
+
+.no-bootstrap .card-list .card-link .card-title{
+  font-size: 1.19rem;
+  color: #1C794C;
+  font-weight: 600;
+}
+
+.no-bootstrap .card-list .card-link .card-button{
+  height: 35px;
+  width: 35px;
+  color: #1C794C;;
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background-color: none;
+  cursor: pointer;
+  border: 2px solid #1C794C;;
+  transform: rotate(-45deg);
+}
+.no-bootstrap .card-list .card-link:hover .card-button{
+  color: #fff;
+  background-color: #1C794C; 
+}
+.no-bootstrap .card-list .card-link .badge.gamer{
+  color: #856404;
+  background-color: #fff3cd;
+}
+.no-bootstrap .card-list .card-link .badge.editor{
+  color: #B25A2B;
+  background-color: #FFE3D2;
+}
+.no-bootstrap .card-list .card-link .badge.marketer{
+  color: #1C794C ;
+  background-color: #D0F0C0;
+}
+.no-bootstrap .card-wrapper .swiper-slide-button{
+  color: white;
+  margin-top: -35px;
+}
+
+@media screen and (max-width: 768px){
+  .no-bootstrap .card-wrapper{
+      margin: 0 10px 25px;
+  }
+  .no-bootstrap .card-wrapper .swiper-slide-button{
+      display: none;
+  }
+
+}
+
+.card-button {
+  background-color: #e3f5f7; /* Original background color */
+  color: inherit; /* Use the default color */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.card-button:hover {
+  color: yellow; /* Change arrow color to yellow on hover */
+}
+
+/* Optional: Add hover effect on bullets */
+/* nous choisi */
+li img {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle; /* Aligns the image vertically with the text */
+}
+li {
+  line-height: 1; /* Adjust the line-height to remove extra space */
+}
+
+/* Keyframes for the fadeInUp animation */
+@keyframes fadeInUp {
+  to {
+      opacity: 1; /* End at full opacity */
+      transform: translateY(0); /* End at the original position */
+  }
+}
+/* Responsive Design */
+
+h2{
+  font-family: Recoleta, serif;
+  color: #555555;
+}
+/* Nous Contacter Section */
+
+
+
+
+
+h2 {
+  font-family: "Josefin Sans";
+}
+
+.role h2 {
+  font-weight: 400;
+  font-size: 50px;
+  margin: 20px 0;
+  color: #111111;
+  text-align: center;
+  max-width: 1000px;
+}
+
+.role {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact Form Section */
+
+/* Form Styling */
+
+/* Contact Info Styling */
+
+/* For tablets (up to 1024px) */
+/* Contact Section (ressource)*/
+
+/* Footer container */
+
+/* Description section */
+
+/* Social Icons */
+
+/* Newsletter section */
+/* Input container adjustments */
+/* Button adjustments */
+/* Visually hidden class */
+
+/* Responsive adjustments */
+
+/* Paragraph styling */
+@media (max-width: 768px) {
+
+  button {
+    font-size: 14px; /* Reduce button text size */
+    padding: 8px 16px; /* Adjust button padding */
+  }
+}
+/* Media query for very small screens (less than 480px wide) */
+@media (max-width: 480px) {
+
+  button {
+    font-size: 12px; /* Further reduce button text size */
+    padding: 6px 12px; /* Adjust button padding for small screens */
+  }
+}
+
+
