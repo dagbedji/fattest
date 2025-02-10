@@ -1167,7 +1167,6 @@ margin-right: 100%;
 
 /* For small devices like phones (up to 768px) */
 @media only screen and (max-width: 768px) {
-
   .contact-page .box {
       grid-template-columns: 1fr;
       grid-template-rows: auto auto auto;
@@ -1442,6 +1441,13 @@ margin-right: 100%;
   .ressource-page .ressource_content {
     flex: 1 1 100%;       /* Each item takes full width */
     max-width: 100% !important;
+  }
+  .ressource-page .recommandation h2{
+    font-size: 30px;
+    
+  }
+  .ressource-page .text-content h2{
+    font-size: 30px;
   }
 }
 .ressource-page .ressource_content img {
