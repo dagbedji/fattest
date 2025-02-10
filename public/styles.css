@@ -264,7 +264,7 @@ body, nav {
 /* Button adjustments */
 .btn-subscribe {
   background-color: #FFD700;
-  color: #1C794C;
+  color: #fff;
   padding: 0.6rem 1rem;
   font-size: 0.9rem;
   border: none;
@@ -528,7 +528,7 @@ margin-right: 100%;
 
 
 .home-page .contact-button {
-  color: white;
+  color: #fff;
   text-decoration: none;
   display: inline-block;
   padding: 10px 20px;
@@ -536,12 +536,12 @@ margin-right: 100%;
   font-size: 16px;
   border-radius: 5px;
   transition: background-color 0.3s;
-  background-color: #FFC100;
+  background-color: #FFC700;
  
 }
 
 .home-page .contact-button:hover {
-  background-color: #FFC700;
+  background-color: #FFC300; 
   
 }
 
@@ -552,7 +552,7 @@ margin-right: 100%;
   .home-page .image-container {
     position: relative;
     padding: 15px;
-    height: 800px;
+    height: 850px;
   }
   .home-page .image-container .image img {
     width: 111%;
@@ -836,7 +836,7 @@ margin-right: 100%;
   font-weight: 400;
   font-size: 36px;
   margin-bottom: 20px;
-  color: #111111;
+  color: #8C7DA0;
   text-align: center;
   max-width: 800px;
 }
@@ -851,11 +851,12 @@ margin-right: 100%;
 /* Header Section */
 .carriere-page .emploi {
   position: relative;
-  background: url('./image/emploi/1000_F_181206822_Pn134XlCBfH2Ka9299DZLHzGOZX8YHcn.jpg') center/cover no-repeat;
+  background: url('../image/emploi/1000_F_181206822_Pn134XlCBfH2Ka9299DZLHzGOZX8YHcn.jpg') center/cover no-repeat;
   height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-position-y: 20%; /* Moves the image down */
 }
 .carriere-page 
 .emploi_overlay {
@@ -1109,7 +1110,7 @@ margin-right: 100%;
 
 .contact-page .inputBox input[type="submit"] {
   background-color: #FFD700;
-  color: #1C794C;
+  color: #fff;
   border: none;
   padding: 15px 20px;
   border-radius: 5px;
@@ -1358,17 +1359,17 @@ margin-right: 100%;
 .ressource-page .contact-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #FFC700;
   color: white;
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
   font-size: 16px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s; 
 }
 
 .ressource-page .contact-button:hover {
-  background-color: #45a049;
+  background-color: #FFC300;
 }
 
 
@@ -2240,9 +2241,8 @@ margin-right: 100%;
 /* Style for the Contactez-nous button */
 .tarif-page .contactus {
   display: inline-block;
-  background-color: #28a745;
+  background-color: #FFC700;
   color: #fff;
-  font-weight: bold;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -2250,7 +2250,7 @@ margin-right: 100%;
   text-transform: uppercase;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  
+ 
   /* This pushes the button to the bottom of the flex container */
   margin-top: auto;
   
@@ -2260,24 +2260,20 @@ margin-right: 100%;
 }
 
 .tarif-page .contactus:hover {
-  background-color: #218838;
+  background-color: #FFC300;
   transform: translateY(-3px);
 }
 
-.tarif-page .contactus p{
-  color: #fff;
-}
-
-/* Hover effect for the button */
-.tarif-page .contactus:hover {
-  background-color: #218838;        /* A slightly darker green on hover */
-  transform: translateY(-3px);      /* Subtle lift effect */
+.tarif-page .contactus a {
+  color: inherit; /* Uses the parent text color */
+  text-decoration: none; /* Removes the underline */
 }
 
 /* Ensure the <p> inside doesn't add extra margins */
 .tarif-page .contactus p {
   margin: 0;
   font-size: 0.9rem;
+  color: #fff;
 }
 
 .tarif-page .price_title {
@@ -2330,8 +2326,9 @@ margin-right: 100%;
 /* Remove default margins from the paragraph if needed */
 .tarif-page .textone p {
   margin-top: 5px;
-  font-size: 0.95rem;
+  font-size: 0.90rem;
   color: #555;
+  
 }
 .tarif-page .remark {
   max-width: 100%;           /* Limits the width for better readability */
