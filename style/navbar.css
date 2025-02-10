@@ -1,8 +1,4 @@
-
 /* Navbar */
-
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -24,6 +20,7 @@ body, nav {
   ul{
     margin-top: 0;
   }
+
   nav ul {
     width: 100%;
     list-style: none;
@@ -91,7 +88,7 @@ body, nav {
     margin-left: auto; /* Pushes the hamburger menu to the right */
     display: none;
   }
-  
+
   @media(max-width: 1050px) {
     .hideOnMobile {
         display: none;
@@ -131,8 +128,6 @@ body, nav {
   }
   
 
-
-
 /* Contact Form Section */
 
 .form {
@@ -140,7 +135,6 @@ body, nav {
   margin: 0 auto;
 }
 
-/* Form Styling */
 
 /* Contact Info Styling */
 .info {
@@ -350,14 +344,6 @@ li {
   line-height: 1; /* Adjust the line-height to remove extra space */
 }
 
-/* Keyframes for the fadeInUp animation */
-@keyframes fadeInUp {
-  to {
-      opacity: 1; /* End at full opacity */
-      transform: translateY(0); /* End at the original position */
-  }
-}
-
 .form {
   grid-area: form;
   margin: 0 auto;
@@ -416,39 +402,6 @@ li {
 
 
 
-
-
-
-/* Paragraph styling */
-/* Animate the fill color between two water-like shades */
-@keyframes waterWave {
-  0% {
-    fill: #009CA8; /* Deep water blue */
-  }
-  50% {
-    fill: #78C0E0; /* Lighter, refreshing water tone */
-  }
-  100% {
-    fill: #009CA8; /* Back to deep blue */
-  }
-}
-
-/* Optional: Animate a slight horizontal movement for added water motion */
-@keyframes waveMotion {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-10px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-
-
-
 @media (max-width: 480px) {
   body.specific-page { /* Add class selector */
     overflow-x: hidden;
@@ -490,5 +443,4 @@ li {
     display: none;
   }
 }
-
 /* Navbar */

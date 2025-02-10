@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -10,10 +11,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="../public/styles.css"/>
 </head>
-
-
 <body>
-  <div class="navebar specific-page">
+
+  <!--first navbar-->
+  <div class="navebar">
 
     <nav id="navigationbare">
       <ul class="sidebar">
@@ -35,8 +36,8 @@
             </div>
           
           <li class="menu-button"><a href="javascript:void(0);" onclick=showSidebar();><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#7F8C8D"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-          <li class="hideOnMobile"> <a href="../index.html"><img src="../image/navbar/loogo.png" alt="logo" class="navbar-logo"></a></li>
-          <li class="hideOnMobile"> <a href="index.html">Accueil</a></li>
+          <li class="hideOnMobile"> <a href="index.html"><img src="../image/navbar/loogo.png" alt="logo" class="navbar-logo"></a></li>
+          <li class="hideOnMobile"> <a href="../index.html">Accueil</a></li>
           <li class="hideOnMobile"> <a href="./services.html">Services</a></li>
           <li class="hideOnMobile"> <a href="./tarification.html">Tarification</a></li>
           <li class="hideOnMobile"> <a href="./ressources.html">Ressources</a></li>
@@ -59,69 +60,135 @@
     </script>
   </div>
 
-<div class="service-page">
-     <!-- Section 2 -->
 
-     <div class="service_offre">
-      <div class="service_overlay"></div>
-      <div class="textservice">
-        <h2>Les services que nous offrons</h2>
-      </div>
- 
+  <header class="tarif">
+    <div class="tarif_overlay"></div>
+    <div class="tarif_text">
+      <h2>Voici nos prix</h2>
     </div>
-    <div class="scroll-container">
-      <img src="../image/svg/keyboard_backspace_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="scroll-left">
-      <div class="serviceType">
-        <div class="enfants" >Services aux enfants</div>
-        <div class="parents" >Services aux parents</div>
-        <div class="travailleurs">Services aux milieux de garde & organismes</div>
-      </div>
-      <img src="../image/svg/arrow_right_alt_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="scroll-right">
-    </div>
-
-    <section  class="section-1">
-          <div class="content">
-            <div class="text">
-              <p id="serviceContent" class="serviceContents">
-              </p>
+  </header>
+  <section class="price">
+    <div class="price_box">
+        <h3 class="price_title">Ouverture de dossier</h3>
+        <div class="price_value">60$</div>
+      <hr />
+      <div class="price_details">
+          <!-- New item -->
+          <div class="textdiv">
+            <div class="textimg">
+              <img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div class="textone">
+              <p>Taux horaire : 72 $</p>
+            </div>
+          </div>
+          <div class="textdiv">
+            <div class="textimg">
+              <img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div class="textone">
+              <p>Forfait 4 h et plus :65 $</p>
+            </div>
+          </div>
+          <div class="textdiv">
+            <div class="textimg">
+              <img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div class="textone">
+              <p>Forfait 30h et plus : 60 $</p>
+            </div>
           </div>
       </div>
+      <div class="contactus">
+        <p>Contactez-nous</p>
+      </div>
+    </div>
+    <div class="price_box">
+        <h3 class="price_title">Animation de groupes</h3>
+        <div class="price_value">300$ + taxes</div>
+        <hr class="divider" />
+        
+        <div class="price_details gestion">
+            <div class="textdiv">
+                <div class="textimg">
+                  <img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div class="textone">
+                  <p>La gestion des émotions et outils d'apaisement pour enfants de 3-5 ans ( 15 enfants / 2 adultes accompagnateurs)</p>
+                </div>
+              </div>
+              <div class="textdiv">
+                <div class="textimg">
+                  <img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div class="textone">
+                  <p>La libération émotionnelle de 6 à 12 ans ( 20 enfants /2 adultes accompagnateurs) </p>
+                </div>
+              </div>
+              <div class="textdiv">
+                <div class="textimg">
+                  <img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div class="textone">
+                  <p>Activités ou thèmes spécifiques disponibles sur demande</p>
+                </div>
+              </div>
+        </div>
+        <div class="contactus">
+            <p>Contactez-nous</p>
+          </div>
+      </div>
+      
+    <div class="price_box">
+      <h3 class="price_title">Ateliers et Formation pédagogique </h3>
+      <hr />
+      <div class="price_details">
+        <div class="textdiv">
+            <div class="textimg">
+              <img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div class="textone">
+              <p>Stratégies pour enseigner la gestion des émotions aux enfants de 3 à 5 ans (en ligne ou en présentiel)</p>
+            </div>
+          </div>
+          <div class="textdiv">
+            <div class="textimg">
+              <img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div class="textone">
+              <p>Comprendre et accompagner l'expression émotionnelle des enfants de 6 à 12 ans</p>
+            </div>
+          </div>
+          <div class="textdiv">
+            <div class="textimg">
+              <img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div class="textone">
+              <p>Séance de partages et conseils éducatifs </p>
+            </div>
+          </div>
+          <div class="textdiv">
+            <div class="textimg">
+              <img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div class="textone">
+              <p>Activités ou thèmes spécifiques disponibles sur demande</p>
+            </div>
+          </div>
+      </div>
+      <div class="contactus">
+        <p>Contactez-nous</p>
+      </div>
+    </div>
   </section>
+  <div class="remark">
+    <div class="remarktext">
+      <p>Pour toute demande concernant une réservation de groupe, veuillez nous contacter par téléphone au 514-225-1895 ou par courriel à info@ases-pro.com. <br></p>
+      <p> Pour tout particulier (adulte ou enfant) souhaitant s'inscrire à nos animations ou ateliers, nous proposons des séances publiques à tarif unitaire. Pour obtenir plus d'informations, consultez notre page Facebook ou contactez-nous directement.</p>
+    </div>
     
-    <section class="section-2" >
-        <div class="text">
-            <div class="content">
-              <h2 id="commitment-title"> </h2>
-              <p id="commitment-text">
- 
-              </p>
-              <div class="arrows">
-                <div class="forward" id="back-arrow">
-                  <img src="../image/svg/arrow_back_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                </div>
-                <div class="back" id="forward-arrow">
-                  <img src="../image/svg/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                </div>
-                
-                
-            </div>
-               
-            </div>
-            <div class="image">
-                <img src="../image/services/service2.avif" alt="">
-            </div>
-        </div>
-        <div class="wave">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
-    </section>
-
-
-</div>
-
-<!-- /footer -->
+  </div>
+      <!-- /footer -->
 <div class="footer-wrapper" style="color: #1C794C; padding: 20px 0;">
   <div class="container-fluid text-center">
     <div class="row align-items-start">
@@ -229,7 +296,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../js/script.js"></script>
-
-<!-- end footer -->
 </body>
 </html>
+

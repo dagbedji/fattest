@@ -9,22 +9,22 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   
-  <link rel="stylesheet" href="accueil.css"/>
+  <link rel="stylesheet" href="./public/styles.css"/>
 </head>
 
 
-<body class="home-page ">
+<body >
 <div class="navebar specific-page">
 
   <nav id="navigationbare">
     <ul class="sidebar">
         <li><a href="javascript:void(0);" onclick=hideSidebar()> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#7F8C8D"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-        <li><a href="../index.html">Accueil</a></li>
-        <li><a href="./services.html">Services</a></li>
-        <li><a href="./tarification.html">Tarification</a></li>
-        <li><a href="./ressources.html">Ressources</a></li>
-        <li><a href="./nousjoindre.html">Nous joindre</a></li>
-        <li><a href="./carrieres.html">Carrières</a></li>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./views/services.html">Services</a></li>
+        <li><a href="./views/tarification.html">Tarification</a></li>
+        <li><a href="./views/ressources.html">Ressources</a></li>
+        <li><a href="./views/nousjoindre.html">Nous joindre</a></li>
+        <li><a href="./views/carrieres.html">Carrières</a></li>
     </ul>
   <div class="nav-container">
     <ul style="margin-bottom: 0px;">
@@ -36,13 +36,13 @@
           </div>
         
         <li class="menu-button"><a href="javascript:void(0);" onclick=showSidebar();><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#7F8C8D"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        <li class="hideOnMobile"> <a href="../index.html"><img src="./image/navbar/loogo.png" alt="logo" class="navbar-logo"></a></li>
-        <li class="hideOnMobile"> <a href="index.html">Accueil</a></li>
-        <li class="hideOnMobile"> <a href="./services.html">Services</a></li>
-        <li class="hideOnMobile"> <a href="./tarification.html">Tarification</a></li>
-        <li class="hideOnMobile"> <a href="./ressources.html">Ressources</a></li>
-        <li class="hideOnMobile"> <a href="./nousjoindre.html">Nous joindre</a></li>
-        <li class="hideOnMobile"> <a href="./carrieres.html">Carrières</a></li>
+        <li class="hideOnMobile"> <a href="./index.html"><img src="./image/navbar/loogo.png" alt="logo" class="navbar-logo"></a></li>
+        <li class="hideOnMobile"> <a href="./index.html">Accueil</a></li>
+        <li class="hideOnMobile"> <a href="./views/services.html">Services</a></li>
+        <li class="hideOnMobile"> <a href="./views/tarification.html">Tarification</a></li>
+        <li class="hideOnMobile"> <a href="./views/ressources.html">Ressources</a></li>
+        <li class="hideOnMobile"> <a href="./views/nousjoindre.html">Nous joindre</a></li>
+        <li class="hideOnMobile"> <a href="./views/carrieres.html">Carrières</a></li>
         
     </ul>
   
@@ -60,126 +60,131 @@
   </script>
 </div>
  
-<div class="image-container">
+<div class="home-page">
 
-  <div class="image">
-    <img src="./image/accueil/34removed.png" alt="backimage">
+  <div class="image-container">
+
+    <div class="image">
+      <img src="./image/accueil/34removed.png" alt="backimage">
+    </div>
+    
+    
+    <!-- Text Content -->
+    <div class="mainText" >
+      <h2>
+        <span class="line1">Bien-être et épanouissement :</span><br>
+        <span class="line2">Votre équilibre, notre engagement !</span>
+      </h2>
+        <p>
+          <span class="tline1"> Nous proposons des services adaptés aux besoins des enfants, des parents, des organismes  </span>
+          <span class="tline2">et des milieux de garde, tout en soutenant le développement des habiletés et des compétences éducatives.</span><br>
+          <br>
+          Notre approche personnalisée s’ajuste aux besoins spécifiques de chacun, visant à optimiser les résultats et à révéler le plein  potentiel. <br>
+          <br>
+          Avec ASES, construisons ensemble un avenir où chaque enfant peut s’épanouir pleinement, et où chaque adulte se sent outillé et confiant dans son rôle éducatif.
+        </p>
+    </div>
+    
+    <!-- Button -->
+    <div class="button-container">
+      <a href="mailto:info@ases-pro.com" class="contact-button custom-contact-button">
+        Contactez-nous
+      </a>
+    </div>
   </div>
   
   
-  <!-- Text Content -->
-  <div class="mainText" >
-    <h2>
-      <span class="line1">Bien-être et épanouissement :</span><br>
-      <span class="line2">Votre équilibre, notre engagement !</span>
-    </h2>
-      <p>
-        <span class="tline1"> Nous proposons des services adaptés aux besoins des enfants, des parents, des organismes  </span>
-        <span class="tline2">et des milieux de garde, tout en soutenant le développement des habiletés et des compétences éducatives.</span><br>
-        <br>
-        Notre approche personnalisée s’ajuste aux besoins spécifiques de chacun, visant à optimiser les résultats et à révéler le plein  potentiel. <br>
-        <br>
-        Avec ASES, construisons ensemble un avenir où chaque enfant peut s’épanouir pleinement, et où chaque adulte se sent outillé et confiant dans son rôle éducatif.
-      </p>
-  </div>
   
-  <!-- Button -->
-  <div class="button-container">
-    <a href="mailto:info@ases-pro.com" class="contact-button custom-contact-button">
-      Contactez-nous
-    </a>
-  </div>
+  
+  <!-- end image -->
+  
+  
+  <!-- end container image -->
+  
+  <div class="container marketing">
+  
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4 d-flex flex-column align-items-center text-center mb-4 mt-5">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./image/accueil/Mission.jpeg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <h2 class="fw-normal mt-3" style="color: #8C7DA0;">Mission</h2>
+        <p>Favoriser le bien-être et le développement optimal des enfants, tout en aidant leur entourage à renforcer leur confiance et à affiner leurs pratiques éducatives. </p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 d-flex flex-column align-items-center text-center mb-4 mt-5">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./image/accueil/objectif.jpg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <h2 class="fw-normal mt-3" style="color: #8C7DA0;">Objectif</h2>
+        <p class="mt-1">Créer un environnement harmonieux, propice à l’apprentissage, au bien-être et à l’épanouissement de tous. </p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 d-flex flex-column align-items-center text-center mb-4 mt-5">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./image/accueil/client2.jpg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <h2 class="fw-normal mt-3" style="color: #8C7DA0;">Clientèle</h2>
+        <p>
+          Nous accompagnons les enfants de 0 à 12 ans, les parents, les milieux de garde (garderie, CPE, école, camp de jour) et leurs professionnels.
+         </p>
+      </div><!-- /.col-lg-4 -->
+    </div>
+    </div>
+  
+    <div class="no-bootstrap">
+      <div class="firstcontainer">
+    
+        <div class="container swiper">
+            <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
+                        <a href="./views/services.html" class="card-link">
+                            <img src="./image/accueil/img-famille-enfant-grossesse-parents-1020x680.jpg" alt="Card Image" 
+                            class="card-image">
+                            <p class="badge">Services</p>
+                            <h2 class="card-title">Une équipe pour répondre à vos besoins.</h2>
+                            <button class="card-button material-symbols-outlined" >arrow_forward</button>
+                        </a>
+                        
+                    </li>
+                    <li class="card-item swiper-slide">
+                          <a href="./views/tarification.html" class="card-link">
+                            <img src="./image/accueil/economie.jpg" alt="Card Image" 
+                            class="card-image">
+                            <p class="badge marketer">Tarification</p>
+                            <h2 class="card-title">Des prix abordables pour tous !</h2>
+                            <button class="card-button material-symbols-outlined" >arrow_forward</button>
+                        </a>
+                        
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="./views/ressource.html" class="card-link">
+                            <img src="./image/accueil/Limportance-pour-nos-petits-de-jouer-avec-dautres-enfants.png" alt="Card Image" 
+                            class="card-image">
+                            <p class="badge gamer">Ressources</p>
+                            <h2 class="card-title">Explorez nos articles pour en apprendre davantages.</h2>
+                            <button class="card-button material-symbols-outlined">arrow_forward</button>
+                        </a>
+                        
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="./views/nousjoindre.html" class="card-link">
+                            <img src="./image/accueil/telephone-mobile-pour-aine.jpg" alt="Card Image" 
+                            class="card-image">
+                            <p class="badge editor">Contacter</p>
+                            <h2 class="card-title">Veuillez nous contacter pour en savoir plus</h2>
+                            <button class="card-button material-symbols-outlined" >arrow_forward</button>
+                        </a>
+                        
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+                
+              </div>
+        </div>    
+    
+    </div>
+    
+    </div>
+
 </div>
 
-
-
-
-<!-- end image -->
-
-
-<!-- end container image -->
-
-<div class="container marketing">
-
-  <!-- Three columns of text below the carousel -->
-  <div class="row">
-    <div class="col-lg-4 d-flex flex-column align-items-center text-center mb-4 mt-5">
-      <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./image/accueil/Mission.jpeg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-      <h2 class="fw-normal mt-3" style="color: #8C7DA0;">Mission</h2>
-      <p>Favoriser le bien-être et le développement optimal des enfants, tout en aidant leur entourage à renforcer leur confiance et à affiner leurs pratiques éducatives. </p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4 d-flex flex-column align-items-center text-center mb-4 mt-5">
-      <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./image/accueil/objectif.jpg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-      <h2 class="fw-normal mt-3" style="color: #8C7DA0;">Objectif</h2>
-      <p class="mt-1">Créer un environnement harmonieux, propice à l’apprentissage, au bien-être et à l’épanouissement de tous. </p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4 d-flex flex-column align-items-center text-center mb-4 mt-5">
-      <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./image/accueil/client2.jpg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-      <h2 class="fw-normal mt-3" style="color: #8C7DA0;">Clientèle</h2>
-      <p>
-        Nous accompagnons les enfants de 0 à 12 ans, les parents, les milieux de garde (garderie, CPE, école, camp de jour) et leurs professionnels.
-       </p>
-    </div><!-- /.col-lg-4 -->
-  </div>
-  </div>
-
-  <div class="no-bootstrap">
-    <div class="firstcontainer">
-  
-      <div class="container swiper">
-          <div class="card-wrapper">
-              <ul class="card-list swiper-wrapper">
-                  <li class="card-item swiper-slide">
-                      <a href="./services.html" class="card-link">
-                          <img src="./image/accueil/img-famille-enfant-grossesse-parents-1020x680.jpg" alt="Card Image" 
-                          class="card-image">
-                          <p class="badge">Services</p>
-                          <h2 class="card-title">Une équipe pour répondre à vos besoins.</h2>
-                          <button class="card-button material-symbols-outlined" >arrow_forward</button>
-                      </a>
-                      
-                  </li>
-                  <li class="card-item swiper-slide">
-                      <a href="./tarification.html" class="card-link">
-                          <img src="./image/accueil/economie.jpg" alt="Card Image" 
-                          class="card-image">
-                          <p class="badge marketer">Tarification</p>
-                          <h2 class="card-title">Des prix abordables pour tous !</h2>
-                          <button class="card-button material-symbols-outlined" >arrow_forward</button>
-                      </a>
-                      
-                  </li>
-                  <li class="card-item swiper-slide">
-                      <a href="./ressource.html" class="card-link">
-                          <img src="./image/accueil/Limportance-pour-nos-petits-de-jouer-avec-dautres-enfants.png" alt="Card Image" 
-                          class="card-image">
-                          <p class="badge gamer">Ressources</p>
-                          <h2 class="card-title">Explorez nos articles pour en apprendre davantages.</h2>
-                          <button class="card-button material-symbols-outlined">arrow_forward</button>
-                      </a>
-                      
-                  </li>
-                  <li class="card-item swiper-slide">
-                      <a href="./nousjoindre.html" class="card-link">
-                          <img src="./image/accueil/telephone-mobile-pour-aine.jpg" alt="Card Image" 
-                          class="card-image">
-                          <p class="badge editor">Contacter</p>
-                          <h2 class="card-title">Veuillez nous contacter pour en savoir plus</h2>
-                          <button class="card-button material-symbols-outlined" >arrow_forward</button>
-                      </a>
-                      
-                  </li>
-              </ul>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-slide-button swiper-button-prev"></div>
-              <div class="swiper-slide-button swiper-button-next"></div>
-              
-            </div>
-      </div>    
-  
-  </div>
-  
-  </div>
 
 <!-- /footer -->
 <div class="footer-wrapper" style="color: #1C794C; padding: 20px 0;">
@@ -189,12 +194,12 @@
       <div class="col-12 col-md-4">
         <h5>Lien rapides</h5>
         <ul class="list-unstyled text-small">
-          <li class="mb-1"><a class="link-dark text-decoration-none" href="../index.html">Accueil</a></li>
-          <li class="mb-1"><a class="link-dark text-decoration-none" href="./services.html">Services</a></li>
-          <li class="mb-1"><a class="link-dark text-decoration-none" href="./tarification.html">Tarification</a></li>
-          <li class="mb-1"><a class="link-dark  text-decoration-none" href="./ressources.html">Ressources</a></li>
-          <li class="mb-1"><a class="link-dark  text-decoration-none" href="./nousjoindre.html">Nous joindre</a></li>
-          <li class="mb-1"><a class="link-dark text-decoration-none" href="./carrieres.html">Carrières</a></li>
+          <li class="mb-1"><a class="link-dark text-decoration-none" href="./index.html">Accueil</a></li>
+          <li class="mb-1"><a class="link-dark text-decoration-none" href="./views/services.html">Services</a></li>
+          <li class="mb-1"><a class="link-dark text-decoration-none" href="./views/tarification.html">Tarification</a></li>
+          <li class="mb-1"><a class="link-dark  text-decoration-none" href="./views/ressources.html">Ressources</a></li>
+          <li class="mb-1"><a class="link-dark  text-decoration-none" href="./views/nousjoindre.html">Nous joindre</a></li>
+          <li class="mb-1"><a class="link-dark text-decoration-none" href="./views/carrieres.html">Carrières</a></li>
         </ul>
       </div>
 
