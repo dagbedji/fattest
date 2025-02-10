@@ -2346,6 +2346,9 @@ margin-right: 100%;
 .tarif-page .remark p{
   margin-top: 10px;
 }
+.tarif-page .remark p .number{
+  text-decoration: none;
+}
 
 /* Responsive Design */
 
