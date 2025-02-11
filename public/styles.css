@@ -544,11 +544,47 @@ margin-right: 100%;
   background-color: #FFC300; 
   
 }
+.home-page .main-container{
+  position: relative;
+}
+.home-page .main-container img {
+  max-width: 100%;
+  width: 100%;
+}
+.home-page .main-container .contact-btn {
+  position: absolute;
+  top: 85%; /* Adjust as needed */
+  left: 30%;
+  transform: translateX(-50%);
+  background-color: #FFC700; /* Blue color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
 
-
+.home-page .main-container .contact-btn:hover {
+  background-color: #FFC300;
+}
+@media only screen and (max-width: 1026px) { /* Adjust breakpoint as needed */
+  .main-container img,
+  .main-container button {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1026px) {
+  #hideDivOnSmallScreen {
+     display: none;
+ }
+  #hideImageOnSmallScreen{
+   display: none;
+ }
+}
 /* Responsive styling for small screens */
 /* Responsive styling for small screens */
-@media (max-width: 576px) {
+@media (max-width: 1026px) {
   .home-page .image-container {
     position: relative;
     padding: 15px;
