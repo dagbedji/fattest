@@ -2,7 +2,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  
   scroll-behavior: smooth;
 }
 
@@ -102,7 +102,7 @@ body, nav {
     }
   }
   
-  .nav-container {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,7 +111,7 @@ body, nav {
     padding: 0;
   }
   
-  .nav-container ul {
+ .nav-container ul {
     height: 100%;
     flex-wrap: nowrap; /* Prevents items from breaking into a new line */
     overflow: hidden; /* Ensures the items stay inside the navbar */
@@ -120,18 +120,19 @@ body, nav {
     text-align: center;
     padding: 10px;
     white-space: nowrap; /* Prevents text from wrapping to the next line */
-    flex: 1; /* Makes each item take equal width */
+    
 }
 .navbar-logo{
   object-fit: contain;
   height: 80px;
 }
 
-  .navebar{
+.navebar{
     height: 90px;
     position: sticky;
     top: 0;
     z-index: 1000;
+    overflow-x: hidden;
   }
   
 
