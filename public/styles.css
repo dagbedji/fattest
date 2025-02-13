@@ -1780,73 +1780,11 @@ margin-right: 100%;
    background-color: #009CA8;
  }
  
- .service-page .section-2 .text {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   gap: 30px;
- }
- 
- .service-page .section-2 .content {
-   flex: 1;
-   text-align: left;
- }
- 
- .service-page .section-2 .content h2 {
-   color: white;
-   margin-bottom: 20px;
-   font-size: 2em;
- }
- 
- .service-page .section-2 .content p {
-   font-size: 16px;
-   line-height: 1.6;
-   margin-bottom: 15px;
-   color: white;
- }
- 
- 
- .service-page .section-2 .content li {
-   margin-left: 20px;
-   padding-left: 10px;
-   list-style-position: inside;
-   font-size: 16px;
- }
- 
- .service-page .section-2 .image {
-   flex: 0;
-   text-align: center;
- }
- 
- .service-page .section-2 .image img {
-   width: 350px;
-   height: 350px;
-   border-radius:  10% 0 10% 0;
-   object-fit: cover;
- }
  
  /* Media Queries for Mobile and Tablet */
  @media (max-width: 1024px) {
    .service-page section {
      padding: 50px 10vw;
-   }
-   .service-page .section-2 {
-     padding: 50px 5%;
-   }
- 
-   .service-page .section-2 .text {
-     flex-direction: column;
-     align-items: center;
-   }
- 
-   .service-page .section-2 .content {
-     text-align: center;
-     margin-bottom: 50px;
-   }
- 
-   .service-page .section-2 .image img {
-     width: 300px;
-     height: 300px;
    }
  }
  
@@ -1855,49 +1793,11 @@ margin-right: 100%;
      padding: 50px 5vw;
    }
  
-   .service-page .section-2 {
-     padding: 30px 5%;
-   }
- 
-   .service-page .section-2 .text {
-     flex-direction: column;
-     align-items: center;
-   }
- 
-   .service-page .section-2 .content {
-     text-align: center;
-     margin-bottom: 20px;
-   }
- 
-   .service-page .section-2 .image img {
-     width: 250px;
-     height: 250px;
-   }
- 
  }
  
  @media (max-width: 480px) {
    .service-page section {
      padding: 30px 5vw;
-   }
- 
-   .service-page .section-2 {
-    padding-top: 100px;
-   }
- 
-   .service-page .section-2 .text {
-     flex-direction: column;
-     align-items: center;
-   }
- 
-   .service-page .section-2 .content {
-     text-align: center;
-     margin-bottom: 20px;
-   }
- 
-   .service-page .section-2 .image img {
-     width: 400px;
-     height: 300px;
    }
  }
  
@@ -2434,3 +2334,75 @@ margin-right: 100%;
  
 }
 /* Tarification*/
+.section-2 .text {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 40px; /* Adds spacing instead of stretching */
+  padding: 20px; /* Adds space inside the container */
+  position: relative;
+}
+
+.section-2 .text .orientation {
+  text-align: center;
+  position: relative;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Makes all divs take equal available space */
+  max-width: 550px; /* Adjust as needed */
+  width: 100%; /* Ensures it scales within the parent */
+}
+
+.section-2 .text .orientation img {
+  width: 100px; /* Adjust image size */
+  max-width: 100%; /* Ensures it scales properly */
+  height: auto;
+  margin-bottom: 20px;
+  min-height: 20px;
+}
+
+.section-2 .text .orientation p {
+  font-size: 14px;
+  line-height: 1.4; /* Improves readability */
+  
+}
+.section-2 .text .orientation h3{
+  word-wrap: break-word;
+  font-size: 16px;
+  font: bold;
+  color: #8C7DA0;
+}
+
+.step-number {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: #8C7DA0;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.step::after {
+  content: "→";
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFC700;
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.step:last-child::after {
+  content: "";
+}
