@@ -2581,10 +2581,10 @@ margin-right: 100%;
 
 @media (max-width: 576px) {
  .formulaire .emballeur {
-    padding: 40px;
+    padding: 20px;
   }
   .formulaire .touche {
-    padding-right: 120px;
+    padding-right: 85px;
   }
 }
 /*Formulaire */
