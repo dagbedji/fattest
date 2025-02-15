@@ -64,9 +64,9 @@ body, nav {
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(220, 220, 220, 0.7);
     backdrop-filter: blur(10px);
-    box-shadow: -5px 0 15px rgba(255, 255, 255, 0.5);
+    box-shadow: -5px 0 15px rgba(220, 200, 200, 0.5);
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -2581,7 +2581,10 @@ margin-right: 100%;
 
 @media (max-width: 576px) {
  .formulaire .emballeur {
-    padding: 20px;
+    padding: 40px;
+  }
+  .formulaire .touche {
+    padding-right: 80px;
   }
 }
 /*Formulaire */
