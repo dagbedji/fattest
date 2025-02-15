@@ -8,54 +8,54 @@ html, body {
 
 /* General Reset */
 body, nav {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  nav {
-    width: 100%;
-  }
-  
-  ul{
-    margin-top: 0;
-  }
+nav {
+  width: 100%;
+}
 
-  nav ul {
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: center; /* Center the items in the navbar */
-    align-items: center;
-    background-color: white;
-    padding: 10px 0; /* Adjust padding to increase navbar height */
-  }
-  
-  nav li {
-    margin: 0 30px; /* Add space between each item */
-    height: 55px;
-  }
-  
-  nav ul li a {
-    height: 100%;
-    padding: 0 20px; /* Adjust padding for each item */
-    color: #111111;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    display: flex;
-    align-items: center;
-    font-size: 18px; /* Increase the font size */
-  }
-  
-  /* Hover and Focus Effects */
-  nav ul li a:hover,
-  nav ul li a:focus {
-    color: #111111;
-  }
-  
-  nav ul li a:active {
-    color: #ffffff;
-  }
-  
+ul{
+  margin-top: 0;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center the items in the navbar */
+  align-items: center;
+  background-color: white;
+  padding: 10px 0; /* Adjust padding to increase navbar height */
+}
+
+nav li {
+  margin: 0 30px; /* Add space between each item */
+  height: 55px;
+}
+
+nav ul li a {
+  height: 100%;
+  padding: 0 20px; /* Adjust padding for each item */
+  color: #111111;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  font-size: 18px; /* Increase the font size */
+}
+
+/* Hover and Focus Effects */
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #111111;
+}
+
+nav ul li a:active {
+  color: #ffffff;
+}
+
   /* Sidebar Styling */
   .sidebar {
     position: fixed;
@@ -64,9 +64,9 @@ body, nav {
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: rgba(220, 220, 220, 0.7);
+    background-color: rgba(240, 240, 240, 0.8);
     backdrop-filter: blur(10px);
-    box-shadow: -5px 0 15px rgba(220, 200, 200, 0.5);
+    box-shadow: -5px 0 15px rgba(200, 200, 200, 0.5);
     display: none;
     flex-direction: column;
     align-items: flex-start;
