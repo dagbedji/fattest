@@ -81,7 +81,7 @@
      <div class="box">
     <div class="contacte form">
         <h3>Envoyer un message</h3>
-        <form>
+        <form id="contactForm">
             <div class="formBox">
                 <div class="row50">
                     <div class="inputBox">
@@ -114,6 +114,9 @@
                         <input type="submit" value="Soumettre">
                     </div>
                 </div>
+                <p id="error-message" style="color: #8C7DA0; display: none;">
+                  ❌ Erreur lors de l’envoi du formulaire. Veuillez nous contacter par courriel ou téléphone.
+              </p>
             </div>
         </form>
     </div>
@@ -253,6 +256,19 @@
     </div>
     </div>
     
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const form = document.getElementById("contactForm");
+          const errorMessage = document.getElementById("error-message");
+      
+          form.addEventListener("submit", function (event) {
+              event.preventDefault(); // Prevent actual form submission
+              
+              // Show error message
+              errorMessage.style.display = "block";
+          });
+      });
+      </script>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/script.js"></script>

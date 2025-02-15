@@ -764,15 +764,6 @@ margin-right: 100%;
   line-height: 1; /* Adjust the line-height to remove extra space */
 }
 
-/* Keyframes for the fadeInUp animation */
-@keyframes fadeInUp {
-  to {
-      opacity: 1; /* End at full opacity */
-      transform: translateY(0); /* End at the original position */
-  }
-}
-
-
 .home-page .role h2 {
   font-weight: 400;
   font-size: 50px;
@@ -2334,6 +2325,7 @@ margin-right: 100%;
  
 }
 /* Tarification*/
+/* Tarification*/
 .section-2 .text {
   display: flex;
   flex-direction: row;
@@ -2341,6 +2333,7 @@ margin-right: 100%;
   gap: 40px; /* Adds spacing instead of stretching */
   padding: 20px; /* Adds space inside the container */
   position: relative;
+  animation: 5s animation;
 }
 
 .section-2 .text .orientation {
@@ -2405,4 +2398,33 @@ margin-right: 100%;
 
 .step:last-child::after {
   content: "";
+}
+.step {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.step.visible-step {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 768px) {
+  .section-2 .text {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px; /* Adds spacing instead of stretching */
+    padding: 20px; /* Adds space inside the container */
+    position: relative;
+    animation: 5s animation;
+  }
+  .section-2 .text .numberone{
+    margin-top: 25px;
+  }
+  .step-number {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
 }

@@ -90,7 +90,7 @@
     
   <section class="section-2">
     <div class="text">
-        <div class="orientation step">
+        <div class="orientation step numberone">
             <span class="step-number">1</span>
             <img src="../image/orientation_fat.png" alt="">
             <h3>Consultation d’orientation</h3>
@@ -240,7 +240,33 @@
   </div>
 </div>
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const steps = document.querySelectorAll(".step");
+    let hasAppeared = false; // Prevents re-triggering
 
+    function checkVisibility() {
+        const section = document.querySelector(".text"); // Parent div containing steps
+        const rect = section.getBoundingClientRect();
+
+        if (!hasAppeared && rect.top < window.innerHeight * 0.8) {
+            hasAppeared = true; // Prevents re-triggering
+
+            steps.forEach((step, index) => {
+                setTimeout(() => {
+                    step.classList.add("visible-step");
+                }, index * 1300); // Delay each step appearance
+            });
+
+            window.removeEventListener("scroll", checkVisibility); // Stop listening after first trigger
+        }
+    }
+
+    window.addEventListener("scroll", checkVisibility);
+    checkVisibility(); // Run on page load in case it's already in view
+});
+
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../js/script.js"></script>
