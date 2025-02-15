@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../logo.png">
-    <title>ASES :: Rejoignez Notre Équipe</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="../public/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
+  <title>ASES :: Formulaire</title>
+  <link rel="shortcut icon" href="./logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../public/styles.css"/>
 </head>
-<body>
 
-  <div class="navebar">
+<body>
+  <div class="navebar specific-page">
+
     <nav id="navigationbare">
       <ul class="sidebar">
           <li><a href="javascript:void(0);" onclick=hideSidebar()> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#7F8C8D"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
@@ -55,119 +56,127 @@
       }
     </script>
   </div>
-  <div class="carriere-page">
-    <header class="emploi">
-      <div class="emploi_overlay"></div>
-      <div class="emploi_text">
-        <h2>Rejoignez Notre Équipe</h2>
-      </div>
-    </header>
-        <div class="nouscontacter"> 
-          <div class="textcontact">
-            <div class="text-content">
-              <h2>La vie chez ASES:</h2>
-              <ul class="styled-list">
-                Nous sommes à la recherche de nouveaux talents pour rejoindre notre équipe dynamique ! 
-                Si vous recherchez un lieu de travail où votre santé mentale est une priorité, vous êtes au bon endroit ! 
-                Nous prenons le bien-être de notre équipe à coeur et nous sommes à l'écoute de leur besoin. Être épanoui au travail, ça existe ! 
-                Travailler auprès de ASES, c'est s'offrir une meilleure qualité de vie professionnelle.
 
-
-            </div>
-            
-
+    <div class="formulaire">
+        <div class="header">
+            <h1 class="colored-text">Nous joindre</h1>
           </div>
-        </div>
-    
-        <section class="apply">
-          <div class="text">
-            <div class="content">
-              <h2 id="commitment-title"></h2>
-              <p id="commitment-text"></p>
-              <div class="arrows">
-                <div class="forward" id="back-arrow">
-                  <img src="../image/svg/arrow_back_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        
+          <div class="carriere" >
+            <section class="emballeur">
+              <h2>Postuler dès maintenant</h2>
+              <p>Pour nous joindre, veuillez envoyer un courriel à <a href="mailto:info@ases-pro.com">info@ases-pro.com</a></p>
+        
+              <form action="#" class="form" id="contactForm">
+                <div class="input-box">
+                  <label>Nom et Prénom</label>
+                  <input type="text" placeholder="Votre nom et prénom" required />
                 </div>
-                <div class="back" id="forward-arrow">
-                  <img src="../image/svg/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        
+                <div class="input-box">
+                  <label>Adresse courriel</label>
+                  <input type="email" placeholder="Votre adresse courriel" required />
                 </div>
-              </div>
-            </div>
-            <div class="image">
-              <img src="../image/emploi/image-clinique-interaction-20.jpeg" alt="">
-            </div>
+        
+                <div class="column">
+                  <div class="input-box">
+                    <label>Numéro de téléphone</label>
+                    <input type="tel" placeholder="Votre numéro de téléphone" required />
+                  </div>
+        
+                  <div class="input-box">
+                    <label>Adresse de domicile</label>
+                    <input type="text" placeholder="Votre adresse" required />
+                  </div>
+        
+                  <div class="input-box">
+                    <label>Date de début souhaitée</label>
+                    <input type="date" required />
+                  </div>
+                </div>
+        
+                <!-- Disponibilité -->
+                <div class="availability">
+                  <label>Disponibilité</label>
+                  <div class="days">
+                    <label><input type="checkbox" name="day" value="Monday"> Lundi</label>
+                    <label><input type="checkbox" name="day" value="Tuesday"> Mardi</label>
+                    <label><input type="checkbox" name="day" value="Wednesday"> Mercredi</label>
+                    <label><input type="checkbox" name="day" value="Thursday"> Jeudi</label>
+                    <label><input type="checkbox" name="day" value="Friday"> Vendredi</label>
+                    <label><input type="checkbox" name="day" value="Saturday"> Samedi</label>
+                    <label><input type="checkbox" name="day" value="Sunday"> Dimanche</label>
+                  </div>
+                </div>
+        
+                <div class="shifts">
+                  <label>Horaires</label>
+                  <div>
+                    <label><input type="checkbox" name="shift" value="Jour"> Jour</label>
+                    <label><input type="checkbox" name="shift" value="Soir"> Soir</label>
+                    <label><input type="checkbox" name="shift" value="Nuit"> Nuit</label>
+                  </div>
+                </div>
+        
+                <!-- Téléchargement de fichiers -->
+                <div class="input-box">
+                  <label>Télécharger votre CV</label>
+                  <input type="file" required />
+                </div>
+        
+                <div class="input-box">
+                  <label>Lettre de présentation (Optionnel)</label>
+                  <input type="file" />
+                </div>
+        
+                <div class="input-box">
+                  <label>Autres diplômes - Télécharger</label>
+                  <input type="file" />
+                </div>
+        
+                <div class="input-box">
+                  <label>Pouvez-vous vous déplacer ? Si oui, précisez le secteur :</label>
+                  <input type="text" placeholder="Secteur de déplacement" />
+                </div>
+        
+                <div class="input-box">
+                  <label>Comment avez-vous entendu parler de nous ?</label>
+                  <input type="text" placeholder="Exemple : Internet, amis, publicité..." />
+                </div>
+        
+                <!-- Question sur l'adhésion à l'AEESQ -->
+                <div class="membre">
+                  <label>Êtes-vous membre de l'AEESQ ?</label>
+                  <div class="radio-group">
+                    <label><input type="radio" name="value" value="Yes" required> Oui</label>
+                    <label><input type="radio" name="value" value="No" required> Non</label>
+                  </div>
+                </div>
+        
+                <!-- Conditions -->
+                <div class="checkbox-container">
+                  <input type="checkbox" id="agree-checkbox" required>
+                  <label for="agree-checkbox">
+                    J'accepte les <a href="./condition.html" target="_blank">conditions</a>.
+                  </label>
+                </div>
+        
+                <!-- Bouton Soumettre -->
+                <button class="touche" type="submit">Soumettre</button>
+                <p id="error-message" style="color: #8C7DA0; display: none;">
+                  ❌ Erreur lors de l’envoi du formulaire. Veuillez nous envoyer votre cv par courriel.
+              </p>
+              </form>
+           
+            </section>
+          
           </div>
-        </section>
-        <script>
-          document.addEventListener('DOMContentLoaded', function () {
-          // Array of commitments
-          const commitments = [
-          "Nous savons que l’équilibre entre vie professionnelle et personnelle est essentiel. C’est pourquoi nous offrons des horaires flexibles, adaptés à vos besoins et en fonction de votre secteur géographique pour vous permettre de travailler à votre rythme et au maximum de votre confort.",
-          "Nous offrons un salaire compétitif à partir de 28$/h, accompagné de primes et de révisions salariales régulières tout au long de votre carrière chez ASES. Nous reconnaissons et valorisons l’expertise que vous apportez, et nous nous engageons à soutenir votre évolution professionnelle.",
-          `Rejoignez notre équipe pour une expérience de travail enrichissante, des opportunités de croissance à long terme et un environnement qui s’adapte à votre style de vie ! <br> Pour postuler, veuillez nous envoyer votre CV à infos@ases-pro.com ou <a href="./formulaire.html" class="blue-link">cliquez ici</a> pour envoyer le formulaire.`
-        ];
-        
-          const commitTitle = [
-            "Flexibilité d'horaire et mandats sur mesure :",
-            "Salaire competitif: ",
-            "Postulez des maintenant",
-            
-          ];
-          // Get DOM elements
-          const commitmentText = document.getElementById('commitment-text');
-          const commitmentTitle = document.getElementById('commitment-title');
-          const backArrow = document.getElementById('back-arrow');
-          const forwardArrow = document.getElementById('forward-arrow');
-        
-          // Track the current index
-          let currentIndex = 0;
-        
-          // Function to update the displayed commitment
-          function updateCommitment() {
-            commitmentText.innerHTML = commitments[currentIndex];
-            commitmentTitle.textContent = commitTitle[currentIndex];
-        
-            // Hide back arrow if first element
-            if (currentIndex === 0) {
-              backArrow.classList.add('hidden');
-            } else {
-              backArrow.classList.remove('hidden');
-            }
-        
-            // Hide forward arrow if last element
-            if (currentIndex === commitments.length - 1) {
-              forwardArrow.classList.add('hidden');
-            } else {
-              forwardArrow.classList.remove('hidden');
-            }
-          }
-        
-          // Initial content display
-          updateCommitment();
-        
-          // Back arrow click event
-          backArrow.addEventListener('click', function () {
-            if (currentIndex > 0) {
-              currentIndex--;
-              updateCommitment();
-            }
-          });
-        
-          // Forward arrow click event
-          forwardArrow.addEventListener('click', function () {
-            if (currentIndex < commitments.length - 1) {
-              currentIndex++;
-              updateCommitment();
-            }
-          });
-        });
-        
-        
-        </script>
 
-  </div>
+    </div>
+  
 
-    <!-- /footer -->
+
+<!-- /footer -->
 <div class="footer-wrapper" style="color: #1C794C; padding: 20px 0;">
   <div class="container-fluid text-center">
     <div class="row align-items-start">
@@ -257,7 +266,7 @@
         </svg>
     </a>
     <a href="https://www.tiktok.com/@ases.pro?_t=8ph8xP72n5B&_r=1" target="_blank">
-       <!--TikTok Icon -->
+      <!--TikTok Icon -->
       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 48 48">
         <path fill="#212121" fill-rule="evenodd" d="M10.904,6h26.191C39.804,6,42,8.196,42,10.904v26.191 C42,39.804,39.804,42,37.096,42H10.904C8.196,42,6,39.804,6,37.096V10.904C6,8.196,8.196,6,10.904,6z" clip-rule="evenodd"></path><path fill="#ec407a" fill-rule="evenodd" d="M29.208,20.607c1.576,1.126,3.507,1.788,5.592,1.788v-4.011 c-0.395,0-0.788-0.041-1.174-0.123v3.157c-2.085,0-4.015-0.663-5.592-1.788v8.184c0,4.094-3.321,7.413-7.417,7.413 c-1.528,0-2.949-0.462-4.129-1.254c1.347,1.376,3.225,2.23,5.303,2.23c4.096,0,7.417-3.319,7.417-7.413L29.208,20.607L29.208,20.607 z M30.657,16.561c-0.805-0.879-1.334-2.016-1.449-3.273v-0.516h-1.113C28.375,14.369,29.331,15.734,30.657,16.561L30.657,16.561z M19.079,30.832c-0.45-0.59-0.693-1.311-0.692-2.053c0-1.873,1.519-3.391,3.393-3.391c0.349,0,0.696,0.053,1.029,0.159v-4.1 c-0.389-0.053-0.781-0.076-1.174-0.068v3.191c-0.333-0.106-0.68-0.159-1.03-0.159c-1.874,0-3.393,1.518-3.393,3.391 C17.213,29.127,17.972,30.274,19.079,30.832z" clip-rule="evenodd"></path><path fill="#fff" fill-rule="evenodd" d="M28.034,19.63c1.576,1.126,3.507,1.788,5.592,1.788v-3.157 c-1.164-0.248-2.194-0.856-2.969-1.701c-1.326-0.827-2.281-2.191-2.561-3.788h-2.923v16.018c-0.007,1.867-1.523,3.379-3.393,3.379 c-1.102,0-2.081-0.525-2.701-1.338c-1.107-0.558-1.866-1.705-1.866-3.029c0-1.873,1.519-3.391,3.393-3.391 c0.359,0,0.705,0.056,1.03,0.159V21.38c-4.024,0.083-7.26,3.369-7.26,7.411c0,2.018,0.806,3.847,2.114,5.183 c1.18,0.792,2.601,1.254,4.129,1.254c4.096,0,7.417-3.319,7.417-7.413L28.034,19.63L28.034,19.63z" clip-rule="evenodd"></path><path fill="#81d4fa" fill-rule="evenodd" d="M33.626,18.262v-0.854c-1.05,0.002-2.078-0.292-2.969-0.848 C31.445,17.423,32.483,18.018,33.626,18.262z M28.095,12.772c-0.027-0.153-0.047-0.306-0.061-0.461v-0.516h-4.036v16.019 c-0.006,1.867-1.523,3.379-3.393,3.379c-0.549,0-1.067-0.13-1.526-0.362c0.62,0.813,1.599,1.338,2.701,1.338 c1.87,0,3.386-1.512,3.393-3.379V12.772H28.095z M21.635,21.38v-0.909c-0.337-0.046-0.677-0.069-1.018-0.069 c-4.097,0-7.417,3.319-7.417,7.413c0,2.567,1.305,4.829,3.288,6.159c-1.308-1.336-2.114-3.165-2.114-5.183 C14.374,24.749,17.611,21.463,21.635,21.38z" clip-rule="evenodd"></path>
         </svg>
@@ -271,7 +280,19 @@
   </div>
 </div>
 </div>
-
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("contactForm");
+      const errorMessage = document.getElementById("error-message");
+  
+      form.addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent actual form submission
+          
+          // Show error message
+          errorMessage.style.display = "block";
+      });
+  });
+  </script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../js/script.js"></script>

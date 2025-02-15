@@ -2484,3 +2484,169 @@ margin-right: 100%;
 }
 /* Tarification*/
 
+/*Formulaire */
+.formulaire{
+  background-color: #b3e0e4;
+}
+.formulaire .header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.formulaire .colored-text {
+  color: #3e8e41;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.formulaire .carriere {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.formulaire .emballeur {
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.formulaire h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #8C7DA0;
+  
+}
+
+.formulaire .form .input-box {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.formulaire .input-box label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.formulaire .input-box input {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.formulaire input[type="file"]::file-selector-button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.formulaire input[type="file"]::file-selector-button:hover {
+  background: #333;
+}
+
+.formulaire .membre, .checkbox-container {
+  margin-top: 20px;
+}
+
+.formulaire .touche {
+  display: block;
+  width: 25%;
+  height: 50px;
+  background: #FFC700;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.formulaire .touche:hover {
+  background: #FFC300;
+}
+
+@media (max-width: 576px) {
+ .formulaire .emballeur {
+    padding: 20px;
+  }
+}
+/*Formulaire */
+/*Condition */
+.condition {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa; /* Soft cyan background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+
+/* Content box */
+.condition .text-container {
+  max-width: 600px;
+  background-color: #ffffff; /* White background */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: justify;
+}
+.condition .text-container h1 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #00796b; /* Teal heading */
+  font-weight: bold;
+}
+
+/* Paragraph styling */
+.condition .text-container p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .condition .text-container {
+    padding: 20px;
+  }
+
+  .condition .text-container h1 {
+    font-size: 22px;
+  }
+
+  .condition .text-container p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .condition .text-container {
+    padding: 15px;
+  }
+
+  .condition .text-container h1 {
+    font-size: 20px;
+  }
+
+  .condition .text-container p {
+    font-size: 13px;
+  }
+}
+/*Condition */

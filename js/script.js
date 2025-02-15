@@ -124,64 +124,6 @@ new Swiper('.card-wrapper', {
   }
 });
 
-
-  document.addEventListener('DOMContentLoaded', function() {
-  // Array of commitments
-  const commitments = [
-    "Nous savons que l''équilibre entre vie professionnelle et personnelle est essentiel. C''est pourquoi nous offrons des horaires flexibles, adaptés à vos besoins et à votre secteur géographique, afin de vous permettre de travailler à votre rythme et dans un maximum de confort.",
-    "Nous offrons un salaire compétitif à partir de 28$/h, accompagné de primes et de révisions salariales régulières tout au long de votre carrière chez ASES. Nous reconnaissons et valorisons l'expertise que vous apportez et nous nous engageons à soutenir votre évolution professionnelle.",
-     "Rejoignez notre équipe pour une expérience de travail enrichissante, des opportunités de croissance à long terme et un environnement adapté à votre style de vie !"
-];
-  const commitTitle = [
-    "Flexibilité d'horaire et mandats sur mesure :",
-    "Salaire",
-    "Rejoignez notre équipe"
-  ];
-
-  // Get DOM elements
-  const commitmentText = document.getElementById('commitment-text');
-  const commitmentTitle = document.getElementById('commitment-title');
-  const backArrow = document.getElementById('back-arrow');
-  const forwardArrow = document.getElementById('forward-arrow');
-
-  // Track the current index
-  let currentIndex = 0;
-
-  // Function to update the displayed commitment
-  function updateCommitment() {
-    commitmentText.textContent = commitments[currentIndex];
-  }
-  function titleUpdate() {
-    commitmentTitle.textContent = commitTitle[currentIndex];
-  }
-
-  // Initial content display
-  titleUpdate();
-  updateCommitment();
-
-  // Back arrow click event
-  backArrow.addEventListener('click', function() {
-    if (currentIndex > 0) {
-      currentIndex--; // Move to the previous commitment
-    } else {
-      currentIndex = commitments.length - 1; // Loop to the last commitment
-    }
-    titleUpdate();
-    updateCommitment();
-  });
-
-  // Forward arrow click event
-  forwardArrow.addEventListener('click', function() {
-    if (currentIndex < commitments.length - 1) {
-      currentIndex++; // Move to the next commitment
-    } else {
-      currentIndex = 0; // Loop to the first commitment
-    }
-    titleUpdate();
-    updateCommitment();
-  });
-});
-
   document.addEventListener("DOMContentLoaded", function () {
   const container = document.querySelector(".serviceType");
   const leftButton = document.querySelector(".scroll-left");
@@ -225,6 +167,3 @@ new Swiper('.card-wrapper', {
   checkScroll();
 });
 
-
-
-  //    ~~~~~~  Service Script         ~~~~~~~~                   //
