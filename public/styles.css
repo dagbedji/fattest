@@ -869,7 +869,7 @@ margin-right: 100%;
 }
 .carriere-page .text-content h2{
   font-weight: 400;
-  font-size: 36px;
+  font-size: 34px;
   margin-bottom: 20px;
   color: #8C7DA0;
   text-align: center;
@@ -1072,7 +1072,7 @@ margin-right: 100%;
   margin: auto;
   padding-top: 40px;
   padding-bottom: 60px;
-  max-width: 1000px; /* Max width for the box */
+  max-width: 1200px; /* Max width for the box */
   box-sizing: border-box;
 
 }
@@ -1085,7 +1085,16 @@ margin-right: 100%;
   grid-area: form;
   margin: 0 auto;
 }
+.contact-page .info {
+  grid: info;
+  width: 100%;
 
+}
+.contact-page .maps {
+  grid: maps;
+  width: 62%;
+
+}
 
 .contact-page .contacte {
   padding: 20px;
@@ -1101,6 +1110,9 @@ margin-right: 100%;
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+}
+.contact-page .contacte.form h3{
+  color: #8C7DA0;
 }
 
  .contact-page .formBox {
@@ -1173,7 +1185,9 @@ margin-right: 100%;
   width: 62%;
   margin: 0 auto;
 }
-
+.contact-page .info h3{
+  color: #8C7DA0 ;
+}
 /* Map Section */
  .contact-page .maps {
   grid-area: maps;
@@ -1192,12 +1206,16 @@ margin-right: 100%;
 .contact-page .contacte.info a {
   text-decoration: none;
   color: #333; /* ou une autre couleur selon ton design */
+  font-size: 20px;
 }
 
 .contact-page .contacte.info a:hover {
   color: #555; /* Couleur au survol si désiré */
 }
-
+.contact-page .contacte.info .coordonnées{
+  font-size: 20px;
+  
+}
 /* Media Queries for Responsiveness */
 
 /* For small devices like phones (up to 768px) */
@@ -1442,7 +1460,6 @@ margin-right: 100%;
   text-align: justify;
 }
 
-/* Service Section */
 .ressource-page .ressource {
   background-color: #ffffff;
   padding: 40px 20px;
@@ -1563,7 +1580,7 @@ margin-right: 100%;
 }
 
 .ressource-page .recom_flex {
-  max-width: 800px;
+  max-width: 700px;
   width: 100%;
   text-align: justify;
 }
@@ -1797,6 +1814,7 @@ margin-right: 100%;
  
    .service-page .section-1 {
      padding: 30px 10vw;
+     height: 100px;
    }
    
    /* Change the flex layout so that image and content stack */
@@ -1850,6 +1868,7 @@ margin-right: 100%;
  @media (max-width: 768px) {
    .service-page .section-1 {
      padding: 20px 5vw;
+     height: 800px;
    }
    
    .service-page .section-1 .image img {
@@ -1877,6 +1896,7 @@ margin-right: 100%;
  @media (max-width: 480px) {
    .service-page .section-1 {
      padding: 15px 5vw;
+     height: 580px;
    }
    
    .service-page .section-1 .content h2 {
@@ -2026,14 +2046,7 @@ margin-right: 100%;
      box-sizing: border-box; /* Include padding in the element's total width */
      width: 750px;
    }
- 
-   .service-page .service-list {
-     padding-left: 20px; /* Adjust padding for lists */
-   }
- 
-   .service-page .service-list li {
-     margin-bottom: 10px; /* Add some space between list items */
-   }
+
  
    .service-page .service_overlay{
      position: absolute;
@@ -2069,6 +2082,151 @@ margin-right: 100%;
        display: block;
      }
    }
+
+   .service-page .section-2 .text {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 40px; /* Adds spacing instead of stretching */
+    padding: 20px; /* Adds space inside the container */
+    position: relative;
+    animation: 5s animation;
+  }
+  
+  .service-page .section-2 .text .orientation {
+    text-align: center;
+    position: relative;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Makes all divs take equal available space */
+    max-width: 550px; /* Adjust as needed */
+    width: 100%; /* Ensures it scales within the parent */
+  }
+  
+  .service-page .section-2 .text .orientation img {
+    width: 100px; /* Adjust image size */
+    max-width: 100%; /* Ensures it scales properly */
+    height: auto;
+    margin-bottom: 20px;
+    min-height: 20px;
+  }
+  
+  .service-page .section-2 .text .orientation p {
+    font-size: 14px;
+    line-height: 1.4; /* Improves readability */
+    
+  }
+  .service-page .section-2 .text .orientation h3{
+    word-wrap: break-word;
+    font-size: 16px;
+    font: bold;
+    color: #8C7DA0;
+  }
+  
+  .service-page .step-number {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: #8C7DA0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .service-page .step::after {
+    content: "→";
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFC700;
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .service-page .step:last-child::after {
+    content: "";
+  }
+  .service-page .step {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .service-page .step.visible-step {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (max-width: 768px) {
+    .service-page .section-2 .text {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 40px; /* Adds spacing instead of stretching */
+      padding: 20px; /* Adds space inside the container */
+      position: relative;
+      animation: 5s animation;
+    }
+    .service-page .section-2 .text .numberone{
+      margin-top: 25px;
+    }
+    .service-page .button-container {
+      position: static; /* Remove absolute positioning on small screens */
+      display: flex;
+      justify-content: center; /* Align the button to the right */
+      width: 100%; /* Ensure the container takes full width */
+    }
+    .service-page .step-number {
+      position:absolute;
+      top: 0px;
+      left: 0px;
+    }
+  }
+  
+
+  .service-page .button-container {
+    position: static; /* Remove absolute positioning on small screens */
+    display: flex;
+    justify-content: center; /* Align the button to the right */
+    position: relative;
+  }
+  
+  .service-page .contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFC700;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s; 
+    position: absolute;
+    text-wrap: nowrap;
+  }
+  
+  .service-page .contact-button:hover {
+    background-color: #FFC300;
+  }
+
+  @media (max-width: 576px) {
+    .service-page .button-container {
+        position: static; /* Remove absolute positioning on small screens */
+        display: flex;
+        justify-content: center; /* Align the button to the right */
+        width: 100%; /* Ensure the container takes full width */
+      }
+    
+    }
  /* Services*/
 /* Tarification*/
 .tarif-page * {
@@ -2147,12 +2305,12 @@ margin-right: 100%;
 .tarif-page .price_box h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #8C7DA0;
+  color: #1C794C;
 }
 
 .tarif-page .price_box hr {
   border: 0;
-  border-top: 2px solid #8C7DA0;
+  border-top: 2px solid #1C794C;
   width: 50px;
   margin: 10px auto;
 }
@@ -2235,7 +2393,7 @@ margin-right: 100%;
 .tarif-page .price_value {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
-  color: #8C7DA0;       /* Contrasting color for price emphasis */
+  color: #1C794C;       /* Contrasting color for price emphasis */
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -2325,106 +2483,4 @@ margin-right: 100%;
  
 }
 /* Tarification*/
-/* Tarification*/
-.section-2 .text {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  gap: 40px; /* Adds spacing instead of stretching */
-  padding: 20px; /* Adds space inside the container */
-  position: relative;
-  animation: 5s animation;
-}
 
-.section-2 .text .orientation {
-  text-align: center;
-  position: relative;
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  flex: 1; /* Makes all divs take equal available space */
-  max-width: 550px; /* Adjust as needed */
-  width: 100%; /* Ensures it scales within the parent */
-}
-
-.section-2 .text .orientation img {
-  width: 100px; /* Adjust image size */
-  max-width: 100%; /* Ensures it scales properly */
-  height: auto;
-  margin-bottom: 20px;
-  min-height: 20px;
-}
-
-.section-2 .text .orientation p {
-  font-size: 14px;
-  line-height: 1.4; /* Improves readability */
-  
-}
-.section-2 .text .orientation h3{
-  word-wrap: break-word;
-  font-size: 16px;
-  font: bold;
-  color: #8C7DA0;
-}
-
-.step-number {
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  background-color: #8C7DA0;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.step::after {
-  content: "→";
-  font-size: 30px;
-  font-weight: bold;
-  color: #FFC700;
-  position: absolute;
-  right: -30px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.step:last-child::after {
-  content: "";
-}
-.step {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.step.visible-step {
-  opacity: 1;
-  transform: translateY(0);
-}
-@media (max-width: 768px) {
-  .section-2 .text {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 40px; /* Adds spacing instead of stretching */
-    padding: 20px; /* Adds space inside the container */
-    position: relative;
-    animation: 5s animation;
-  }
-  .section-2 .text .numberone{
-    margin-top: 25px;
-  }
-  .step-number {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-  }
-}
