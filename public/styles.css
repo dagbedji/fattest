@@ -64,9 +64,9 @@ nav ul li a:active {
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: rgba(240, 240, 240, 0.8);
+    background-color: rgba(220, 220, 220, 0.9); /* Light grayish white */
     backdrop-filter: blur(10px);
-    box-shadow: -5px 0 15px rgba(200, 200, 200, 0.5);
+    box-shadow: -5px 0 15px rgba(180, 180, 180, 0.5); /* More pronounced gray shadow */
     display: none;
     flex-direction: column;
     align-items: flex-start;
