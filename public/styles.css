@@ -778,6 +778,9 @@ margin-right: 100%;
   .home-page .no-bootstrap .card-link .card-button {
     color: #1C794C;
   }
+  .home-page .no-bootstrap .card-link .card-button:hover{
+    color: #e3f5f7;
+  }
 
 }
 
