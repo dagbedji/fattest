@@ -739,20 +739,14 @@ margin-right: 100%;
   background-color: transparent;
   cursor: pointer;
   border: 2px solid #1C794C;
+  transition: color 0.3s ease; /* Smooth transition */
 }
-.no-bootstrap .card-list .card-link:hover .card-button{
-  color: #fff;
-  background-color: #1C794C; 
-}
+
 .no-bootstrap .card-link .card-button:hover {
   color: #fff;
   background-color: #1C794C;
 }
-.no-bootstrap .card-link .card-button.card-button {
-  background-color: #e3f5f7; /* Original background color */
-  color: inherit; /* Use the default color */
-  transition: color 0.3s ease; /* Smooth transition */
-}
+
 
 .home-page .no-bootstrap .card-list .card-link .badge.gamer{
   color: #856404;
@@ -780,6 +774,9 @@ margin-right: 100%;
   }
   .home-page .no-bootstrap .card-link{
     height: 380px;
+  }
+  .home-page .no-bootstrap .card-link .card-button {
+    color: #1C794C;
   }
 
 }
