@@ -658,18 +658,7 @@ margin-right: 100%;
 .home-page .no-bootstrap .card-list .card-item {
   list-style: none;
 }
-.home-page .no-bootstrap .card-list .card-item .card-link{
-  user-select: none;
-  display: block;
-  background: #fff;
-  padding: 18px;
-  border-radius: 12px;
-  text-decoration: none;
-  border: 2px solid transparent;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-  transition: 0.2s ease;
-  height: 350px;
-}
+
 
 .home-page .no-bootstrap .card-list .card-link .badge{
   color: #2ba1b3;
@@ -719,14 +708,20 @@ margin-right: 100%;
 }
 
 .home-page .no-bootstrap .card-link{
-  position: relative;
+  user-select: none;
   display: flex;
+  position: relative;
   flex-direction: column;
-  align-items:center;
-  text-align:left;
-  height: 100%;
-  padding-bottom: 50px; /* Space for the button */
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.2s ease;
+  height: 350px;
 }
+
 
 .home-page .no-bootstrap .card-link .card-button {
   position: absolute;
@@ -778,6 +773,9 @@ margin-right: 100%;
   }
   .home-page .no-bootstrap .card-wrapper .swiper-slide-button{
       display: none;
+  }
+  .home-page .no-bootstrap .card-link{
+    height: 400px;
   }
 
 }
