@@ -720,6 +720,7 @@ margin-right: 100%;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
   transition: 0.2s ease;
   height: 350px;
+  
 }
 
 
@@ -775,7 +776,7 @@ margin-right: 100%;
       display: none;
   }
   .home-page .no-bootstrap .card-link{
-    height: 400px;
+    height: 380px;
   }
 
 }
