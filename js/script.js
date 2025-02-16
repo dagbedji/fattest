@@ -124,6 +124,22 @@ new Swiper('.card-wrapper', {
   }
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   document.addEventListener("DOMContentLoaded", function () {
   const container = document.querySelector(".serviceType");
   const leftButton = document.querySelector(".scroll-left");

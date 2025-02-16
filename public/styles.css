@@ -668,21 +668,9 @@ margin-right: 100%;
   border: 2px solid transparent;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
   transition: 0.2s ease;
+  height: 350px;
 }
-.home-page .no-bootstrap .card-list .card-item .card-link:active{
-  cursor: grabbing;
-}
-.home-page .no-bootstrap .card-list .card-item .card-link:hover{
-  border-color: #2ba1b3;
 
-}
-.home-page .no-bootstrap .card-list .card-item .card-image {
-  width: 100%;
-  aspect-ratio: 16 / 9; 
-  object-fit: cover;
-  border-radius: 10px;
-
-}
 .home-page .no-bootstrap .card-list .card-link .badge{
   color: #2ba1b3;
   margin: 16px 0 18px;
@@ -701,21 +689,72 @@ margin-right: 100%;
   font-weight: 600;
 }
 
-.home-page .no-bootstrap .card-list .card-link .card-button{
+
+
+
+.home-page .no-bootstrap .card-list .card-item .card-link:active{
+  cursor: grabbing;
+}
+.home-page .no-bootstrap .card-list .card-item .card-link:hover{
+  border-color: #2ba1b3;
+
+}
+.home-page .no-bootstrap .card-list .card-item .card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9; 
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+
+.home-page .no-bootstrap .card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures even spacing */
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  position: relative; /* Ensures absolute positioning works inside */
+}
+
+.home-page .no-bootstrap .card-link{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  text-align:left;
+  height: 100%;
+  padding-bottom: 50px; /* Space for the button */
+}
+
+.home-page .no-bootstrap .card-link .card-button {
+  position: absolute;
+  bottom: 15px; /* Adjust for uniform placement */
+  left: 0;
+  transform: translateX(50%) rotate(-45deg); /* Centers button */
   height: 35px;
   width: 35px;
-  color: #1C794C;;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  color: #1C794C;
   border-radius: 50%;
-  margin: 30px 0 5px;
-  background-color: none;
+  background-color: transparent;
   cursor: pointer;
-  border: 2px solid #1C794C;;
-  transform: rotate(-45deg);
+  border: 2px solid #1C794C;
 }
-.home-page .no-bootstrap .card-list .card-link:hover .card-button{
+
+.card-link:hover .card-button {
   color: #fff;
-  background-color: #1C794C; 
+  background-color: #1C794C;
 }
+
+
+
+
+
+
 .home-page .no-bootstrap .card-list .card-link .badge.gamer{
   color: #856404;
   background-color: #fff3cd;
