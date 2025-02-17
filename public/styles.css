@@ -2201,6 +2201,10 @@ margin-right: 100%;
     opacity: 1;
     transform: translateY(0);
   }
+  .section-2 .etape h3{
+    margin-top: 25px;
+    color: white;
+  }
   @media (max-width: 768px) {
     .service-page .section-2 .text {
       display: flex;
@@ -2225,8 +2229,12 @@ margin-right: 100%;
       top: 0px;
       left: 0px;
     }
+    .section-2 .etape h3 {
+      margin-top: 45px;
+      color: white;
+      margin-left: 20px;
+    }
   }
-  
 
   .service-page .button-container {
     position: static; /* Remove absolute positioning on small screens */
@@ -2688,3 +2696,4 @@ margin-right: 100%;
   }
 }
 /*Condition */
+
