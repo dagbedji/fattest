@@ -896,7 +896,7 @@ margin-right: 100%;
 }
 
 .carriere-page .text-content {
-  max-width: 600px;
+  max-width: 850px;
 }
 .carriere-page .styled-list {
   list-style-type: disc;
@@ -1415,7 +1415,7 @@ margin-right: 100%;
 }
 
 .ressource-page .text-content {
-  max-width: 600px;
+  max-width: 850px;
 }
 .ressource-page .styled-list {
   list-style-type: disc;
@@ -1431,12 +1431,11 @@ margin-right: 100%;
 }
 
 .ressource-page .text-content p {
-  margin: 20px 0;
+  margin: 10px 0;
   line-height: 1.6;
   font-size: 16px;
   color: #333333;
 }
-
 .ressource-page .button-container {
   position: static; /* Remove absolute positioning on small screens */
   display: flex;
@@ -2125,7 +2124,7 @@ margin-right: 100%;
   .service-page .section-2 .text .orientation img {
     width: 100px; /* Adjust image size */
     max-width: 100%; /* Ensures it scales properly */
-    height: auto;
+    height: 80px;
     margin-bottom: 20px;
     min-height: 20px;
   }
