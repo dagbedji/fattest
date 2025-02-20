@@ -1761,6 +1761,7 @@ margin-right: 100%;
  .service-page .section-1 .content img{
   width: 450px;
   border-radius: 15px;
+  height: 300px;
  }
  .service-page .section-1 .text {
    display: flex;
@@ -1909,7 +1910,7 @@ margin-right: 100%;
  @media (max-width: 480px) {
    .service-page .section-1 {
      padding: 15px 5vw;
-     height: 580px;
+     height: 630px;
    }
    
    .service-page .section-1 .content h2 {
