@@ -900,7 +900,7 @@ margin-right: 100%;
 }
 .carriere-page .styled-list {
   list-style-type: disc;
-  padding-left: 20px;
+  
 }
 .carriere-page .text-content h2{
   font-weight: 400;
@@ -1073,6 +1073,7 @@ margin-right: 100%;
   .carriere-page .apply .content p{
     text-align: left;
   }
+
 }
 
 
