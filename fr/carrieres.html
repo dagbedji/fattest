@@ -82,96 +82,26 @@
         <section class="apply">
           <div class="text">
             <div class="content">
-              <h2 id="commitment-title"></h2>
-              <p id="commitment-text"></p>
-              <div class="arrows">
-                <div class="forward" id="back-arrow">
-                  <img src="../image/svg/arrow_back_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+              <h2 id="commitment-title">Pourquoi vous joindre à nous?</h2>
+              <div>
+                <p> <img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz25.svg" alt=""> Bénéficiez d’une paie de vacances équivalente à <span class="color"> 4 % de votre salaire annuel. </span> </p>
+                <p> <img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz25.svg" alt="">  Nos services sont offerts <span class="color">en présentiel et en télétravail</span>, avec des horaires flexibles <span class="color">de jour et/ou de soir</span>. Nous adaptons nos contrats à vos disponibilités et à votre secteur géographique pour un meilleur équilibre vie professionnelle - vie personnelle.</p>
+                <p> <img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz25.svg" alt="">  Un salaire compétitif à partir de 28 $/h, avec primes et révisions salariales régulières
+                  pour valoriser votre évolution chez ASES. </p>
+                <p> <img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz25.svg" alt="">  Participez activement en tant que partenaire à nos projets (outils, formations et
+                    bien plus encore) : ensemble, développons des ressources impactantees !</p>
+                <p> <img src="../image/svg/group_add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">  <span class="color">Rejoignez notre équipe</span> pour une expérience de travail enrichissante, adaptée à votre
+                    style de vie ! </p>
+                    <p> <img src="../image/svg/mark_email_read_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <span class="color"> Pour postuler :</span> Envoyez votre CV à <a class="mailto" href="mailto:">infos@ases-pro.com </a> ou <a class="mailto" href="./formulaire.html">cliquez ici</a>  pour remplir </p>
                 </div>
-                <div class="back" id="forward-arrow">
-                  <img src="../image/svg/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                </div>
-              </div>
+        
             </div>
             <div class="image">
               <img src="../image/emploi/image-clinique-interaction-20.jpeg" alt="">
             </div>
           </div>
         </section>
-        <script>
-          document.addEventListener('DOMContentLoaded', function () {
-          // Array of commitments
-          const commitments = [
-          `
-          <p> <img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz25.svg" alt="">  Vous recevrez une paie de vacances équivalente à 4% de votre salaire annuel, vous permettant de profiter pleinement de vos congés. </p>
-          <p> <img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz25.svg" alt="">  Après seulement 3 mois de service, vous aurez droit à 4 jours de congé de maladie payés par an, pour prendre soin de vous en cas de besoin.  </p>
-          <p> <img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz25.svg" alt="">  Bénéficiez de 10 jours de congés personnels sans solde par an pour répondre à des obligations familiales ou personnelles. </p>
-          <p> <img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz25.svg" alt="">  Profitez de 3 semaines de vacances dès votre première année, vous offrant un équilibre travail-vie personnelle dès le début.</p>
-
-          `,
-          ` <img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz25.svg" alt=""> Nous savons que l’équilibre entre vie professionnelle et personnelle est essentiel. C’est pourquoi nous offrons des horaires flexibles, adaptés à vos besoins et en fonction de votre secteur géographique pour vous permettre de travailler à votre rythme et au maximum de votre confort.`,
-          `<img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz25.svg" alt=""> Nous offrons un salaire compétitif à partir de 28$/h, accompagné de primes et de révisions salariales régulières tout au long de votre carrière chez ASES. Nous reconnaissons et valorisons l’expertise que vous apportez, et nous nous engageons à soutenir votre évolution professionnelle. `,
-          `<img src="../image/svg/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz25.svg" alt=""> Rejoignez notre équipe pour une expérience de travail enrichissante, des opportunités de croissance à long terme et un environnement qui s’adapte à votre style de vie ! <br> Pour postuler, veuillez nous envoyer votre CV à infos@ases-pro.com ou <a href="./formulaire.html" class="blue-link">cliquez ici</a> pour envoyer le formulaire.`,
-        ];
-        
-          const commitTitle = [
-            "Pourquoi vous joindre à nous? ",
-            "Flexibilité d'horaire et mandats sur mesure :",
-            "Salaire",
-            "Postulez des maintenant",
-            
-          ];
-          // Get DOM elements
-          const commitmentText = document.getElementById('commitment-text');
-          const commitmentTitle = document.getElementById('commitment-title');
-          const backArrow = document.getElementById('back-arrow');
-          const forwardArrow = document.getElementById('forward-arrow');
-        
-          // Track the current index
-          let currentIndex = 0;
-        
-          // Function to update the displayed commitment
-          function updateCommitment() {
-            commitmentText.innerHTML = commitments[currentIndex];
-            commitmentTitle.textContent = commitTitle[currentIndex];
-        
-            // Hide back arrow if first element
-            if (currentIndex === 0) {
-              backArrow.classList.add('hidden');
-            } else {
-              backArrow.classList.remove('hidden');
-            }
-        
-            // Hide forward arrow if last element
-            if (currentIndex === commitments.length - 1) {
-              forwardArrow.classList.add('hidden');
-            } else {
-              forwardArrow.classList.remove('hidden');
-            }
-          }
-        
-          // Initial content display
-          updateCommitment();
-        
-          // Back arrow click event
-          backArrow.addEventListener('click', function () {
-            if (currentIndex > 0) {
-              currentIndex--;
-              updateCommitment();
-            }
-          });
-        
-          // Forward arrow click event
-          forwardArrow.addEventListener('click', function () {
-            if (currentIndex < commitments.length - 1) {
-              currentIndex++;
-              updateCommitment();
-            }
-          });
-        });
-        
-        
-        </script>
+       
 
   </div>
 

@@ -962,11 +962,13 @@ margin-right: 100%;
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+  width: 110%;
 }
 
 .carriere-page .apply .content {
   flex: 1;
   text-align: left;
+  
 }
 
 .carriere-page .apply .content h2 {
@@ -981,10 +983,18 @@ margin-right: 100%;
   margin-bottom: 15px;
   color: white;
 }
-
+.carriere-page .apply .content p .color{
+  color: #fff;
+  font-weight: bold;
+}
 .carriere-page .apply .image {
   flex: 0;
   text-align: center;
+}
+.carriere-page .apply .content p .mailto{
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .carriere-page .apply .image img {
@@ -992,6 +1002,7 @@ margin-right: 100%;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
+  height: 360px;
 }
 
 /* Arrows Styling */
