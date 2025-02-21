@@ -919,7 +919,8 @@ margin-right: 100%;
 }
 @media (max-width: 768px) {
   .carriere-page .text-content p {
-    width: 380px;
+    width: 100%;
+    padding-left: 20px;
   }
 
 }
