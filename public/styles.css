@@ -917,6 +917,12 @@ margin-right: 100%;
   font-size: 16px;
   color: #333333;
 }
+@media (max-width: 768px) {
+  .carriere-page .text-content p {
+    width: 380px;
+  }
+
+}
 
 /* Header Section */
 .carriere-page .emploi {
